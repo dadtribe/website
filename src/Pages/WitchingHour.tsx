@@ -5,12 +5,16 @@ export const WitchingHour = () => (
   <Center>
     <Stack width={["95%", "70%"]}>
       <Box>
-        the witching hour ss around the 3 month mark some babies are said to
-        calm down. our baby did the opposite. She was so chill the first 90 days
-        that we often got jealous remarks around how chill our baby was. the
-        week of 3 month bday, she started going apeshit in the evenings. scream
-        crying tears streaming, painful stuff to watch as a parent. Many valiant
-        efforts were made
+        The witching hour happened around the 3 month mark for us. Some babies
+        are said to calm down, but when she reached this age, our baby did the
+        opposite. She was so chill that we often got jealous remarks around how
+        chill our baby was. Right around 90 days on this planet, she started
+        going apeshit in the evenings, particularly from 6-8pm. Just knew it was
+        coming no matter how peaceful the time leading up to it. Scream crying
+        tears streaming, painful stuff to watch as a parent. Many valiant
+        efforts were made, and to be quite honest I'm not sure what is was, and
+        by 5 months she got over this. But this particular two hour stretch was
+        always the worst.
       </Box>
 
       <Center p="50px">

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ChakraProvider, Flex, Box, theme } from "@chakra-ui/react";
+import { ChakraProvider, Flex, Text, Box, theme } from "@chakra-ui/react";
 import {
   HashRouter as Router,
   Routes,
