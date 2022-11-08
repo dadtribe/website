@@ -9,7 +9,7 @@ export const TipsDad = () => (
         attrs={{
           host: "https://cusdis.com",
           appId: "ed5bd525-674c-4548-be96-4cf0a5bbc5bc",
-          pageId: "1",
+          pageId: "3",
           pageTitle: "DAD_TIPS",
           pageUrl: "https://dadtribe.org/dad_tips",
         }}

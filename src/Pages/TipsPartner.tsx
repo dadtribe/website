@@ -11,7 +11,7 @@ export const TipsPartner = () => (
         attrs={{
           host: "https://cusdis.com",
           appId: "ed5bd525-674c-4548-be96-4cf0a5bbc5bc",
-          pageId: "1",
+          pageId: "4",
           pageTitle: "PARTNER_TIPS",
           pageUrl: "https://dadtribe.org/partner_tips",
         }}
