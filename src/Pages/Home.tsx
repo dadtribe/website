@@ -30,10 +30,19 @@ export const Home = () => (
       </Text>
 
       <Box p="5%" />
+      <Text>Open forum posts</Text>
+      <Box>
+        <Link href="/#/dad_tips">Tips for being a good dad</Link>
+      </Box>
+      <Box>
+        <Link href="/#/partner_tips">Tips for being a good partner</Link>
+      </Box>
+
+      <Box p="5%" />
       <Text>Current posts</Text>
       <Box>
         <Link href="/#/witching_hour">
-          <Image src="witching_hour.png"></Image>
+          <Image w="35%" src="witching_hour.png"></Image>
         </Link>
       </Box>
 
@@ -54,9 +63,9 @@ export const Home = () => (
       </Center>
       <Text>
         <List>
-          <ListItem>Next ideas in pipeline </ListItem>
-          <ListItem>Tips for being a good dad </ListItem>
-          <ListItem>Tips being a good partner</ListItem>
+          <ListItem>
+            <Text fontSize="x-large">Next ideas in pipeline </Text>
+          </ListItem>
           <ListItem>Strategies for finances </ListItem>
           <ListItem>Best gear </ListItem>
           <ListItem>problem solving tactics</ListItem>

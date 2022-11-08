@@ -12,6 +12,8 @@ import { Home } from "./Home";
 import { Header } from "./Header";
 import { WitchingHour } from "./WitchingHour";
 import { Footer } from "./Footer";
+import { TipsDad } from "./TipsDad";
+import { TipsPartner } from "./TipsPartner";
 
 export const App = () => (
   <Router>
@@ -20,6 +22,8 @@ export const App = () => (
         <Header></Header>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/dad_tips" element={<TipsDad />} />
+          <Route path="/partner_tips" element={<TipsPartner />} />
           <Route path="/witching_hour" element={<WitchingHour />} />
         </Routes>
 
