@@ -3,7 +3,6 @@ import {
   ChakraProvider,
   Box,
   Center,
-  Link,
   List,
   ListItem,
   Stack,
@@ -15,6 +14,8 @@ import {
   Heading,
   Spacer,
 } from "@chakra-ui/react";
+import Link from "next/link";
+
 import { ReactCusdis } from "react-cusdis";
 
 export const Home = () => (
@@ -64,7 +65,7 @@ export const Home = () => (
       <Text>
         <List>
           <ListItem>
-            <Text fontSize="x-large">Next ideas in pipeline </Text>
+            <Text fontSize="x-large">Next ideas in pipeline </Text>p
           </ListItem>
           <ListItem>Strategies for finances </ListItem>
           <ListItem>Best gear </ListItem>
