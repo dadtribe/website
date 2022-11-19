@@ -7,9 +7,10 @@ export const FirstForty = () => (
       <Box>
         <Text>
           The first forty days after birth are also known as the 4th trimester.
-          Dad's number one responsibility is to get mom back health again.
+          Dad's number one responsibility is to get mom back healthy again.
           Nourishing food and lots of love are the keys here, sleeping when baby
-          sleeps is key for both parents.
+          sleeps is critcal for both parents. Dad, we know you're tired but
+          please don't forget what mom just went through.
         </Text>
         <Box pt={15}>
           <Link href="https://www.amazon.com/First-Forty-Days-Essential-Nourishing/dp/1617691836/ref=asc_df_1617691836/?tag=hyprod-20&linkCode=df0&hvadid=312154663427&hvpos=&hvnetw=g&hvrand=11522246540751072858&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1013651&hvtargid=pla-449470152699&psc=1">
