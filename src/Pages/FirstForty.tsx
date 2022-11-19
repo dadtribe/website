@@ -16,7 +16,6 @@ export const FirstForty = () => (
             Highly recommended reading{" "}
           </Link>
         </Box>
-        s
       </Box>
 
       <Center p="50px">
