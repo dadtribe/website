@@ -14,6 +14,7 @@ import {
   Text,
   Heading,
   Spacer,
+  GridItem,
 } from "@chakra-ui/react";
 import { ReactCusdis } from "react-cusdis";
 
@@ -40,12 +41,22 @@ export const Home = () => (
 
       <Box p="5%" />
       <Text>Current posts</Text>
-      <Box>
-        <Link href="/#/witching_hour">
-          <Image w="35%" src="witching_hour.png"></Image>
-        </Link>
-      </Box>
-
+      <Grid gap={5}>
+        <GridItem>
+          <Box>
+            <Link href="/#/first_forty">
+              <Image w="35%" src="first_forty_book.png"></Image>
+            </Link>
+          </Box>
+        </GridItem>
+        <GridItem>
+          <Box>
+            <Link href="/#/witching_hour">
+              <Image w="35%" src="witching_hour.png"></Image>
+            </Link>
+          </Box>
+        </GridItem>
+      </Grid>
       <Center p="10%">
         <Stack>
           <Heading>What would you like to see the next post be about?</Heading>
