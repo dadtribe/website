@@ -22,7 +22,9 @@ export const Home = () => (
   <Center>
     <Stack p={[2, 10]} w={["100", "70%"]}>
       <Text fontSize={["20px", "48px"]} fontWeight="800" align="center">
-        Being a dad will break you - it's how you get back up that counts
+        Being a dad will break you - it's how you get back up that counts \"A
+        happy life consists not in the absence, but in the mastery of
+        hardships.\" - Helen Keller
       </Text>
       <Box p=".25%" />
       <Text fontSize={["20px", "30px"]} fontWeight="600" align="center">
