@@ -21,15 +21,18 @@ import { ReactCusdis } from "react-cusdis";
 export const Home = () => (
   <Center>
     <Stack p={[2, 10]} w={["100", "70%"]}>
-      <Text fontSize={["20px", "48px"]} fontWeight="800" align="center">
-        Being a dad will break you - it's how you get back up that counts "A
-        happy life consists not in the absence, but in the mastery of
-        hardships." - Helen Keller
+      <Text fontSize={["20px", "36px"]} fontWeight="600" align="center">
+        “My father gave me the greatest gift anyone could give another person:
+        He believed in me.” — Jim Valvano
+      </Text>
+      <Text fontSize={["20px", "36px"]} fontWeight="600" align="center">
+        {" "}
+        WE BELIEVE IN YOU!
       </Text>
       <Box p=".25%" />
-      <Text fontSize={["20px", "30px"]} fontWeight="600" align="center">
-        Hopefully this preparation helps you do it fewer times and rebound
-        quicker
+      <Text fontSize={["20px", "30px"]} fontWeight="400" align="center">
+        Falling is inevitable, hopefully we help you do it fewer times and have
+        a framework in place to rebound quickly.
       </Text>
 
       <Box p="5%" />
@@ -85,6 +88,18 @@ export const Home = () => (
           <ListItem>spend more energy to feel younger</ListItem>
         </List>
       </Text>
+      <Box p="5%">
+        <Heading as="h3" size="lg" textAlign="center">
+          Helpful Links
+        </Heading>
+        <List spacing={3}>
+          <ListItem>
+            <Link href="https://www.fatherly.com/life/small-change-that-made-a-huge-difference-in-my-well-being">
+              Small changes make a big difference
+            </Link>
+          </ListItem>
+        </List>
+      </Box>
     </Stack>
   </Center>
 );
