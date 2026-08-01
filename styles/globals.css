@@ -1,0 +1,43 @@
+:root {
+  --font-display: "Jost", "Futura", "Avenir Next", "Century Gothic", sans-serif;
+  --font-body: "Source Serif 4", "Charter", "Iowan Old Style", Georgia, serif;
+  --font-mono: "IBM Plex Mono", "Menlo", ui-monospace, monospace;
+
+  /* The Manual — drafting-paper palette */
+  --paper: #ece7dc;
+  --paper-2: #e3dccc;
+  --ink: #201e1a;
+  --graphite: #6c665a;
+  --rule: #c8bfac;
+  --blue: #1f5a7a;
+  --flag: #b4472e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
