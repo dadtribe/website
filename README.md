@@ -1,59 +1,73 @@
-This project was bootstrapped with
-[Create React App](https://github.com/facebook/create-react-app).
+# The Dad Tribe
 
-## Available Scripts
+**A field manual for fatherhood — collectively maintained, tested in the field, written by the dads living it.**
 
-In the project directory, you can run:
+Live at [dadtribe.org](https://dadtribe.org). Being a dad will break you; this is here so you hit fewer of the hard days by surprise, and rebound faster when you do.
 
-### `yarn start`
+This is an open collective. If you've learned something the hard way — the gear that actually held up, the tactic that saved a 5pm meltdown, the thing to pack so you don't forget it at the door — add it. That's the whole point.
 
-Runs the app in the development mode.<br /> Open
-[http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.<br /> You will also see any lint errors
-in the console.
+## Ways to contribute
 
-### `yarn test`
+You don't need to be a developer for the first two. Open an issue or email it in and we'll get it on the page.
 
-Launches the test runner in the interactive watch mode.<br /> See the section
-about
-[running tests](https://facebook.github.io/create-react-app/docs/running-tests)
-for more information.
+- ✉️ **Email it in:** [zach@davidfam.fun](mailto:zach@davidfam.fun)
+- 🐛 **Open an issue / PR:** [github.com/dadtribe/website](https://github.com/dadtribe/website)
 
-### `yarn build`
+### Add a gear review
 
-Builds the app for production to the `build` folder.<br /> It correctly bundles
-React in production mode and optimizes the build for the best performance.
+Real, first-hand verdicts only — no affiliate noise. What held up, what to skip.
+Edit the `§01 Gear` section in [`components/Home.tsx`](components/Home.tsx): copy an existing `<article className={s.spec}>` card and fill in the item, the honest review, and a `Buy it` / `Skip it` verdict with a rating (1–5 bars).
 
-The build is minified and the filenames include the hashes.<br /> Your app is
-ready to be deployed!
+### Add a packing list item
 
-See the section about
-[deployment](https://facebook.github.io/create-react-app/docs/deployment) for
-more information.
+Lists live as plain data in [`pages/packing.tsx`](pages/packing.tsx) — the `ACTIVITIES` array. Each item is:
 
-### `yarn eject`
+```ts
+{ id: "sunhat", label: "Sun hat + baby sunscreen", ages: ["newborn", "baby", "toddler"], note: "optional tip" }
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Tag it with the ages it applies to (`newborn` = 0–3mo, `baby` = 4–12mo, `toddler` = 1–3yr) and it shows up under the right filter automatically. Want a whole new activity? Add another entry to `ACTIVITIES`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can
-`eject` at any time. This command will remove the single build dependency from
-your project.
+### Add a tip
 
-Instead, it will copy all the configuration files and the transitive
-dependencies (webpack, Babel, ESLint, etc) right into your project so you have
-full control over them. All of the commands except `eject` will still work, but
-they will point to the copied scripts so you can tweak them. At this point
-you’re on your own.
+The forum lives at [`pages/tips.tsx`](pages/tips.tsx) (still filling in — first entries welcome).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for
-small and middle deployments, and you shouldn’t feel obligated to use this
-feature. However we understand that this tool wouldn’t be useful if you couldn’t
-customize it when you are ready for it.
+---
 
-## Learn More
+## Running it locally
 
-You can learn more in the
-[Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Requires Node 18+.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+yarn install
+yarn dev
+```
+
+Open [http://localhost:3000](http://localhost:3000). Pages hot-reload as you edit.
+
+```bash
+yarn build   # production build (run this before opening a PR)
+yarn start   # serve the production build
+```
+
+## How it's built
+
+- **[Next.js](https://nextjs.org/) 13** (pages router) + TypeScript
+- Plain semantic JSX styled with **CSS Modules** — no UI framework
+- Fonts via Google Fonts in [`pages/_document.tsx`](pages/_document.tsx): Jost (display), Source Serif 4 (body), IBM Plex Mono (labels)
+- Design tokens (palette, fonts) in [`styles/globals.css`](styles/globals.css); shared styles in [`styles/Manual.module.css`](styles/Manual.module.css)
+- External links + contact centralized in [`lib/config.ts`](lib/config.ts)
+
+```
+components/Home.tsx    → homepage manual (gear, tips, packing teasers, contribute)
+pages/packing.tsx      → reusable packing checklists (by activity + age)
+pages/tips.tsx         → tips forum
+lib/config.ts          → repo URL + contact email
+styles/                → globals + CSS modules
+```
+
+## License
+
+Open source. Use it, fork it, send improvements back. If you add something that helped you, it'll probably help the next dad too.

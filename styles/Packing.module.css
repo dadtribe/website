@@ -1,0 +1,324 @@
+.intro {
+  padding: 56px 0 8px;
+}
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin: 0 0 14px;
+}
+.h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+  line-height: 0.98;
+  font-size: clamp(38px, 7vw, 82px);
+  margin: 0;
+  text-wrap: balance;
+}
+.blurb {
+  margin: 20px 0 0;
+  max-width: 52ch;
+  font-size: 18px;
+  color: var(--graphite);
+}
+
+/* ---- Filter groups ---- */
+.filters {
+  display: grid;
+  gap: 22px;
+  padding: 40px 0 8px;
+}
+.group {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.groupLabel {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--graphite);
+  width: 90px;
+  flex-shrink: 0;
+}
+.chip {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.01em;
+  padding: 8px 15px;
+  border: 1px solid var(--rule);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+.chip:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+.chipOn {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper);
+}
+.chipOn:hover {
+  color: var(--paper);
+}
+
+/* ---- Checklist sheet ---- */
+.sheet {
+  margin: 34px 0 0;
+  border: 1px solid var(--ink);
+}
+.sheetHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  background: var(--ink);
+  color: var(--paper);
+  flex-wrap: wrap;
+}
+.sheetTitle {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  margin: 0;
+}
+.sheetMeta {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.count {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #c9c2b2;
+  font-variant-numeric: tabular-nums;
+}
+.reset {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: transparent;
+  color: var(--paper);
+  border: 1px solid #4a463c;
+  padding: 7px 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+.reset:hover {
+  border-color: var(--flag);
+  color: #e8a08c;
+}
+
+/* ---- Progress bar ---- */
+.bar {
+  height: 4px;
+  background: var(--paper-2);
+}
+.barFill {
+  height: 100%;
+  background: var(--blue);
+  transition: width 0.35s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* ---- Items ---- */
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 15px 22px;
+  border-bottom: 1px solid var(--rule);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.item:last-child {
+  border-bottom: none;
+}
+.item:hover {
+  background: var(--paper-2);
+}
+.box {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  border: 1.5px solid var(--graphite);
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  transition: all 0.18s ease;
+}
+.boxOn {
+  background: var(--blue);
+  border-color: var(--blue);
+}
+.check {
+  width: 11px;
+  height: 11px;
+  stroke: #fff;
+  stroke-width: 3;
+  fill: none;
+  opacity: 0;
+  transform: scale(0.6);
+  transition: all 0.18s ease;
+}
+.checkOn {
+  opacity: 1;
+  transform: none;
+}
+.itemBody {
+  flex: 1;
+}
+.itemLabel {
+  font-size: 17px;
+  line-height: 1.35;
+  transition: color 0.15s ease;
+}
+.itemDone {
+  color: var(--graphite);
+  text-decoration: line-through;
+  text-decoration-color: var(--rule);
+}
+.itemNote {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.02em;
+  color: var(--graphite);
+  margin-top: 3px;
+}
+.empty {
+  padding: 40px 22px;
+  color: var(--graphite);
+  font-style: italic;
+}
+
+.done {
+  padding: 22px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--blue);
+  border-top: 1px solid var(--rule);
+}
+
+.hint {
+  margin: 22px 0 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--graphite);
+  letter-spacing: 0.03em;
+}
+
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 46px 0 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--graphite);
+}
+.back:hover {
+  color: var(--blue);
+}
+
+/* ============================================================
+   MOBILE — make the checklist sweet on a phone
+   ============================================================ */
+@media (max-width: 640px) {
+  .intro {
+    padding: 34px 0 4px;
+  }
+  .blurb {
+    font-size: 16px;
+  }
+
+  /* Label on its own line so chips wrap from the left, full width */
+  .filters {
+    gap: 20px;
+    padding: 28px 0 4px;
+  }
+  .group {
+    gap: 8px;
+  }
+  .groupLabel {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+  .chip {
+    padding: 12px 16px;
+    font-size: 15px;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  /* Sheet header: title on top, count + reset on their own row */
+  .sheet {
+    margin-top: 24px;
+  }
+  .sheetHead {
+    padding: 15px 16px;
+    gap: 12px;
+  }
+  .sheetTitle {
+    font-size: 19px;
+  }
+  .sheetMeta {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .reset {
+    padding: 10px 16px;
+    min-height: 40px;
+  }
+
+  /* Roomy, thumb-friendly rows */
+  .item {
+    padding: 15px 16px;
+    gap: 13px;
+    min-height: 52px;
+  }
+  .box {
+    width: 24px;
+    height: 24px;
+    margin-top: 1px;
+  }
+  .check {
+    width: 13px;
+    height: 13px;
+  }
+  .itemLabel {
+    font-size: 16.5px;
+  }
+  .itemNote {
+    font-size: 12px;
+  }
+}
+
+/* Extra squeeze for very small phones */
+@media (max-width: 380px) {
+  .chip {
+    font-size: 14px;
+    padding: 11px 13px;
+  }
+}
