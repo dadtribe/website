@@ -205,6 +205,49 @@
   background: var(--rule);
 }
 
+/* ---- Coming soon panel ---- */
+.soon {
+  border: 1px dashed var(--rule);
+  border-radius: 4px;
+  padding: 52px 40px;
+  text-align: center;
+}
+.soonStamp {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--blue);
+  border: 1.5px solid var(--blue);
+  border-radius: 3px;
+  padding: 7px 14px;
+  transform: rotate(-2deg);
+  margin-bottom: 24px;
+}
+.soonLead {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(22px, 3vw, 30px);
+  letter-spacing: -0.01em;
+  margin: 0 auto 12px;
+  max-width: 22ch;
+  text-wrap: balance;
+}
+.soonNote {
+  color: var(--graphite);
+  max-width: 54ch;
+  margin: 0 auto;
+  font-size: 16px;
+}
+.soonNote a {
+  color: var(--blue);
+  border-bottom: 1px solid var(--rule);
+}
+.soonNote a:hover {
+  border-color: var(--blue);
+}
+
 /* ---- Index list (tips) ---- */
 .idx {
   display: grid;

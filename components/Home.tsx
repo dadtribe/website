@@ -54,79 +54,17 @@ export const Home = () => (
         <h2>Gear · Field-Tested</h2>
         <span className={s.fill} />
       </div>
-      <div className={s.specgrid}>
-        <article className={s.spec}>
-          <div className={s.fld}>Item / Carriers</div>
-          <h3>The Everyday Carrier</h3>
-          <p>
-            Lived in it for the first eight months. Survives spit-up, one-handed
-            clips, and the 5pm pace-around.
-          </p>
-          <div className={s.rating}>
-            <span className={s.verdict}>Buy it</span>
-            <span className={s.bars} aria-label="5 of 5">
-              <i />
-              <i />
-              <i />
-              <i />
-              <i />
-            </span>
-          </div>
-        </article>
-        <article className={s.spec}>
-          <div className={s.fld}>Item / Sleep</div>
-          <h3>White-Noise Machine</h3>
-          <p>
-            The unglamorous MVP. Cheap, loud enough, and the single best return
-            on a good night&rsquo;s sleep.
-          </p>
-          <div className={s.rating}>
-            <span className={s.verdict}>Buy it</span>
-            <span className={s.bars} aria-label="5 of 5">
-              <i />
-              <i />
-              <i />
-              <i />
-              <i />
-            </span>
-          </div>
-        </article>
-        <article className={s.spec}>
-          <div className={s.fld}>Item / Strollers</div>
-          <h3>The Hyped Travel System</h3>
-          <p>
-            Looks great in the showroom. In practice: heavy, fiddly, and it
-            never fit the trunk. Skip.
-          </p>
-          <div className={s.rating}>
-            <span className={`${s.verdict} ${s.verdictSkip}`}>Skip it</span>
-            <span className={s.bars} aria-label="2 of 5">
-              <i />
-              <i />
-              <i className={s.off} />
-              <i className={s.off} />
-              <i className={s.off} />
-            </span>
-          </div>
-        </article>
-        <article className={s.spec}>
-          <div className={s.fld}>Item / Round 2</div>
-          <h3>Now testing: baby #2</h3>
-          <p>
-            New reviews landing as we live them. Second kid, same manual —
-            updated for what actually held up.
-          </p>
-          <div className={s.rating}>
-            <span className={`${s.verdict} ${s.verdictField}`}>In field</span>
-            <span className={s.bars} aria-label="testing">
-              <i />
-              <i />
-              <i />
-              <i className={s.off} />
-              <i className={s.off} />
-            </span>
-          </div>
-        </article>
+      <div className={s.soon}>
+        <span className={s.soonStamp}>Coming soon</span>
+        <p className={s.soonLead}>Field-tested gear reviews are on the way.</p>
+        <p className={s.soonNote}>
+          No affiliate noise — just what actually held up and what didn&rsquo;t,
+          tested for real. First reviews land as we live them (baby #2 is the
+          current test lab). Got gear that earned its place?{" "}
+          <a href={REPO_URL} target="_blank" rel="noreferrer">
+            Add it.
+          </a>
+        </p>
       </div>
     </section>
 
@@ -248,16 +186,16 @@ export const Home = () => (
         </div>
         <div className={s.log}>
           <div>
-            <b>+ added</b> White-noise machine · sleep
-          </div>
-          <div>
             <b>+ added</b> Packing lists · reusable
           </div>
           <div>
-            <b>~ edited</b> Witching hour · new tactic
+            <b>+ added</b> First forty · field note
           </div>
           <div>
-            <b>− flagged</b> Travel system · overrated
+            <b>~ edited</b> Witching hour · write-up
+          </div>
+          <div>
+            <b>+ open</b> Gear reviews · seeking field notes
           </div>
         </div>
       </div>
